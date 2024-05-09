@@ -1,0 +1,214 @@
+@font-face {
+    font-family: fancy;
+    src: url(../fonts/QuickKiss.ttf);
+}
+
+body{
+  font-family: 'Source Sans 3', sans-serif; 
+  font-weight: 300; 
+  background: #001323;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  height: 100vh;
+}
+
+
+/* LOGO STUFF */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden; /* Stop overflow outside circle */
+    margin-left: 0em;
+    /* outline: 2px dashed #ff0000;
+    outline-offset: -2px; */
+}
+
+.logo-container img {
+     width: 10vw; /* controls size of image inside  */
+}
+
+
+/* HEADER STUFF */
+.header-nav {
+  display: flex;
+  align-items: center; /* Align vertical center */
+  justify-content:space-between;
+  padding: 0vw;
+  background-color: #001323;
+  margin-bottom: 0;
+  height: 5em;
+
+}
+
+.header-nav ul {
+  display: flex;
+  list-style-type: none; /* Remove default list bullets */
+  margin: 0;
+  padding: 0;
+  background-color: #001323; /* Dark background color */
+
+  flex-grow: 1;
+  /* outline: 2px dashed #ff0000;
+  outline-offset: -2px;   */
+}
+
+.header-nav li a {
+  display: block; /* Expand click area to entire list item */
+  font-family: "Source Sans 3";
+  color: #EDFAFD; /* Text color */
+  text-align: center; /* Center text */
+  padding: 2vw 2vw; /* Spacing around text */
+  text-decoration: none; /* Remove default underline */
+  font-weight: 200;    
+  font-size: 1.5vw;
+}
+
+.header-nav li a:hover {
+  background-color: #ddd; /* Light background on hover */
+  color: black; /* Text color on hover */
+  border-radius: 5%;  
+}
+
+.right-link{
+  background-color: #ffffff;  
+  /* make link align right */
+  margin-left: auto;
+}
+
+.right-link a{
+    color: #001323!important;
+    background-color: #ffffff;
+}
+
+
+
+/* Text Styles */
+p{
+    font-size: 1.5vw;  
+    color: #EDFAFD; 
+    overflow-wrap: break-word;
+    hyphens: auto;
+    margin: 5em;
+    
+}
+
+h1 {
+
+}
+
+/* MAIN CONTAINERS */
+.main-content-container
+{
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+  /* outline: 2px dashed #000000;
+  outline-offset: -2px; */
+}
+
+.content-inner
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* outline: 2px dashed #004cff;
+  outline-offset: -2px; */
+}
+
+.hori-center{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  /* outline: 2px dashed #ff0000;
+  outline-offset: -2px; */
+}
+
+.row-reverse{
+  flex-direction: row-reverse;
+}
+
+.content-block{
+  width: 50%;
+  height: 55em;
+  padding: 0;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: 2px dashed #ff0000;
+  outline-offset: -2px; */
+}
+.content-block img{
+ min-height: 100%;
+ min-width: 100%;
+ object-fit: cover;
+ justify-content: center;
+
+
+}
+
+
+/* Scroll arrow */
+.down-arrow-container{
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);  /* adjust for the width of the arrow to make sure it's centred */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  overflow: hidden; /* Stop overflow outside circle */
+  background-color:#e2c7be;
+  padding: 10px;
+  filter: opacity(80%)
+}
+
+.down-arrow-container img {
+  width: 3.5em; /* size of image inside  */
+}
+
+/* FOR TABLET */
+/* TODO */
+
+/* FOR MOBILE */
+@media screen and (max-width: 640px){
+  
+  .main-content-inner
+  {
+   width: 95%;
+  }
+
+  .content-block{
+    width: 90%;
+  }
+
+  p{
+    font-size: 3.5vw;
+  }
+  h1{
+    font-size: 9.0vw;
+    color:#e4c8be;     
+  }
+
+  .header-nav li a {
+
+    text-align: center; /* Center text */
+    padding: 2.5vw 2.5vw; /* Spacing around text */
+    text-decoration: none; /* Remove default underline */
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 4vw;
+  }
+
+
+   
+}
