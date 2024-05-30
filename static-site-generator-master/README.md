@@ -5,4 +5,4 @@ generator with Node.js.
 
 This repo was setup to support the YouTube video.
 
-[![YouTube Video](media/cover-static-site-generator-md.png)](https://www.youtube.com/watch?v=NPgg3rpZ_RU)
+[![YouTube Video](src/pages/media/media/cover-static-site-generator-md.png)](https://www.youtube.com/watch?v=NPgg3rpZ_RU)

@@ -12,7 +12,7 @@ cover_image: "path/to/album-cover.jpg"
 *Date: YYYY-MM-DD*  
 *Author: Sanjana (Galapagos Islands)*
 
-![Album Cover](path/to/album-cover.jpg)
+![Album Cover](img/large.jpg)
 
 ---
 
@@ -22,7 +22,7 @@ cover_image: "path/to/album-cover.jpg"
 2. **II** - Description of track two.
 3. **III** - Description of track three.
 
-![Track List Image](path/to/track-list.jpg)
+![Track List Image](img/small.jpg)
 
 ---
 
@@ -34,13 +34,13 @@ The inspiration for *Archipelago* came from [inspiration source]. Each track was
 
 Recording the album was an incredible experience. From late-night studio sessions to experimenting with new sounds, the journey was filled with memorable moments.
 
-![Studio Work](path/to/studio-work.jpg)
+![Studio Work](img/small.jpg)
 
 ### Collaborations
 
 Collaborating with talented artists and producers was a highlight of creating this album. Their unique contributions added depth and richness to the final product.
 
-![Collaboration](path/to/collaboration.jpg)
+![Collaboration](img/small.jpg)
 
 ---
 
@@ -52,7 +52,7 @@ You can listen to *Archipelago* on various streaming platforms:
 - [Apple Music](https://apple.com/music)
 - [SoundCloud](https://soundcloud.com)
 
-![Streaming Platforms](path/to/streaming-platforms.jpg)
+![Streaming Platforms](img/small.jpg)
 
 ---
 
@@ -64,7 +64,7 @@ You can listen to *Archipelago* on various streaming platforms:
 
 ## About Galapagos Islands
 
-![Artist Image](path/to/artist-image.jpg)
+![Artist Image](img/small.jpg)
 
 Galapagos Islands is the musical alias of Sanjana, an artist known for blending diverse genres and creating unique soundscapes. With a passion for music and a talent for storytelling, Galapagos Islands continues to push the boundaries of contemporary music.
 

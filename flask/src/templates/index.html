@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Welcome to the Blog{% endblock %}
+{% block post_links %}
+    {% for post in posts %}
+    <li><a href="{{ url_for('post', post_slug=post['slug']) }}">{{ post['title'] }}</a></li>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    <h1>Welcome to the Blog</h1>
+    <p>This is the index page.</p>
+    <div>
+        {% for div in divs %}
+        <div>{{ div }}</div>
+        {% endfor %}
+    </div>
+{% endblock %}
