@@ -1,0 +1,19 @@
+
+
+h1{
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 20em;
+    color: #005f5f;
+}
+body{
+  font-family: 'Source Sans 3', sans-serif; 
+  font-weight: 300; 
+  background: #a6d7ff;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  height: 100vh;
+}
+
+
