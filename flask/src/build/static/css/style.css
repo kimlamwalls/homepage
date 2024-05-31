@@ -40,26 +40,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Test and link styling sidebar*/
-.sidebar a {
-    padding: 0.5vw 0.5vw 0.5vw 2vw;
-    text-decoration: none;
-    font-size: 2vw;
-    color: #b2b2b2;
-    display: block;
 
-}
-
-.sidebar a:hover {
+nav a {
     color: #f1f1f1;
-    transition: 0.25s;
+    transition: color .1s ease-out, -webkit-filter 05s ease-out;
 }
 
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+nav h1 {
+    padding: 2vw 0vw 2vw 3vw;
+    font-size: 1.8vw;
+    color: #f1f1f1;
+    text-align: left;
+    font-weight: 350;
+}
+nav h2{
+    padding: 0.6vw 0vw 0.6vw 3vw;
+    font-size: 1.5vw;
+    text-align: left;
+    font-weight: 250;
+}
+
+nav a:hover {
+    color: #d9d9d9;
+    /*blur*/
+    filter: blur(0.5px);
+    transition: color .01s ease-out, -webkit-filter 05s ease-out;
+    /*cool text filter*/
+    filter: drop-shadow(2px 2px 2px #ffffff);
+    /*add a thin underline and  move it a little space away     */
+    text-decoration: underline;
+    text-decoration-thickness: 0.01em;
+    text-decoration-color: #f1f1f1;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.3em;
+
 }
 
 body {
@@ -91,7 +105,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: flex-start;
     /*evenly space */
     width: 100%;
     margin-top: 6vw;
@@ -134,17 +148,20 @@ body {
         transition: filter 0.05s;*/
 }
 
-
-
 /*Evenly space grid items the from the middle, based on viewport width*/
 .grid-L{
-    margin-left: auto;
     margin-right:5%;
+    margin-left: auto;
 }
 
 .grid-R{
-    margin-right: auto;
     margin-left:5%;
+    margin-right: auto;
+}
+
+.last-single-grid-item{
+    margin-right: auto;
+    margin-left: 8.512vw;
 }
 
 .grid-item img {
@@ -205,7 +222,6 @@ body {
     transition: filter 0.15s;
 }
 
-
 /*Card Title*/
 .grid-item-content h3 {
     font-size: 1vw;
@@ -230,15 +246,150 @@ body {
     padding-top: 5vw;
 }
 
+
+/*===================POST PAGE STYLING===========*/
+/*set to roughly the middle of the page*/
+.post-container {
+    display: block;
+    margin: auto;
+    width:75%;
+    margin-top: 5vw;
+    color: black; !important;
+}
+
+.post-container h1{
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+.post-container h2 {
+    font-size: 1.6vw;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+.post-container h3 {
+    font-size: 1vw;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+.post-content p{
+    padding-top: 2vw;
+    font-size: 1vw;
+    font-weight: 420;
+    padding-bottom: 2vw;
+    text-align: left;
+}
+
+.post-img-main{
+    width: 20vw;
+    object-fit: contain; /* Ensures the image fits within the container */
+    display: block;
+    /*add darken filter to soften the image*/
+    filter: brightness(0.95);
+}
+
+.video-link {
+        text-align: left;
+
+    }
+    .video-link img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+    .video-link p {
+        font-size: 16px;
+        color: #006e8a;
+        text-decoration: underline;
+        cursor: pointer;
+        padding-top: 1em;
+    }
+
+
 /* ==========FOOTER STYLING============= */
 footer {
-    display: block;
-    left: 0;
-    bottom: 0;
+    padding-top:32vh;
     width: 100%;
-    background-color: #ffffff;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-    height: 10rem;
+    background-color: #000000;
+    color: #ffffff;
+    height: auto;
+    padding-left: 2rem;
+    /*place   the footer at the  bottom  of the screen*/
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    right: 0;
+    /*align the text to the left*/
+    text-align: left;
+    /*add padding to the top and bottom of the footer*/
+
 }
+
+footer h2 {
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-left:0;
+
+
+
+}
+
+footer a {
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-left:0;
+}
+
+footer p {
+    font-size: 0.8vw;
+    color: #ffffff;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    padding-left:0;
+
+}
+
+footer span{
+    display: block;
+    font-size: 0.8vw;
+    color: #ffffff;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    padding-left:0;
+}
+
+/* make unordered list  span width ways*/
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left; /* Center the icons horizontally */
+    gap: 1vw; /* Add space between the icons */
+}
+
+ul li{
+    display: inline;
+    padding:0;
+}
+
+ul li a{
+    color: #d2d2d2;
+    font-size: 2vw; /* Adjust size as needed */
+    transition: color 0.3s ease;
+}
+
+ul li a:hover{
+    transition: color 0.1s ease;
+    color: rgba(255, 197, 0, 0.95);
+    filter: drop-shadow(5px 5px 8px rgba(255, 244, 190, 0.12));
+
+}
+

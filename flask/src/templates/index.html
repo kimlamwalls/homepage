@@ -3,84 +3,54 @@
 
 
 {% block content %}
-{% for post in posts %}
-        <li><a href="{{ url_for('post', post_slug=post.slug) }}">{{ post.title }}</a> - {{ post.date }}</li>
-{% endfor %}
 
-    <div class="grid-container">
-        <h2 class="section-title-h2">Music</h2>
-        <div class="grid-row-container smaller-margin-top">
-
-            <a href="{{ url_for('post', post_slug='archipelago') }}" class="grid-item grid-L">
+{% for category in categories %}
+<section id="{{ category }}">
+    <h2 class="section-title-h2">{{ category }}</h2>
+    {% set post_counter = namespace(c = 0) %}  <!--zero post counter for new category-->
+    {% for post in posts if post.category == category %} <!--loop through posts in category-->
+    {% if post_counter.c == 0 %} <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        {% elif post_counter.c % 2 == 0 %} <!-- else if post counter is greater than 2 and even-->
+        <div class="grid-row-container"> <!-- create new normal row-->
+            {% endif %}
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            {%if post_counter.c % 2 == 0 %}
+            {% set class = 'grid-L' %}
+            {% else %}
+            {% set class = 'grid-R' %}
+            {% endif %}
+            <!--if its last post and odd-->
+            {%if loop.last and post_counter.c % 2 == 0 %}
+            {% set class = 'last-single-grid-item' %}
+            {% endif %}
+            <a href="{{ url_for('post', post_slug=post.slug) }}" class="grid-item {{ class }}">
                 <div class="grid-item-content">
-
-                    <h3>
-                        Galapagos Island - Archipelago (Live) 2024
-                    </h3>
-                    <p>
-                        Ambient 2 piece. Synthesizers, drums, piano.
-                    </p>
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.roles }}</p>
                 </div>
-                <img src="{{ url_for('static', filename='media/archipelago.jpg') }}" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">
-                    <h3>
-                        Galapagos Island - Archipelago (Live) 2024
-                    </h3>
-                    <p>
-                        Live set from the park OP-1 and Model Cycles
-                    </p>
-                </div>
-<!---->
+                <!--if post has image file, render that-->
+                {% if post.card_image %}
+                <img src="{{ url_for('static', filename='media/' + post.card_image) }}" alt="{{ post.card_image_alt }}"
+                     class="grid-item-image">
+                {%elif post.card_video %}
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="{{ url_for('static', filename='media/' + post.card_video) }}" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
+                {% endif %}
 
             </a>
+            {% set post_counter.c = post_counter.c +1 %} <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            {% if post_counter.c % 2 == 0 or loop.last %}
         </div>
-        <h2 class="section-title-h2">Video</h2>
-        <div class="grid-row-container smaller-margin-top">
-            <a href="#" class="grid-item grid-L">
-                <div class="grid-item-content">Card 1</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">Card 2</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-
-            </a>
-        </div>
-        <h2 class="section-title-h2">Games</h2>
-        <div class="grid-row-container smaller-margin-top">
-            <a href="#" class="grid-item grid-L">
-                <div class="grid-item-content">Card 1</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">Card 2</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-
-            </a>
-        </div>
-        <h2 class="section-title-h2">Audio Engineering</h2>
-        <div class="grid-row-container smaller-margin-top">
-            <a href="#" class="grid-item grid-L">
-                <div class="grid-item-content">Card 1</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">Card 2</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-        </div>
-
-
-
-    </div>
-<!--    <div>
-        {% for div in divs %}
-        <div>{{ div }}</div> USE THIS WHEN THINGS ARE SET UP TO BE RENDERED PROPERLY
+        {% endif %}
         {% endfor %}
-    </div>-->
-
+    </div>
+</section>
+{% endfor %}
 {% endblock %}
 
 
