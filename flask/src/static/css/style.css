@@ -130,8 +130,8 @@ body {
     */
     filter: brightness(1); /* Hover effect to brighten the box */
     transition: filter 0.15s;
-/*    filter: blur(0px); !* Hover effect to blur the box *!
-    transition: filter 0.05s;*/
+    /*    filter: blur(0px); !* Hover effect to blur the box *!
+        transition: filter 0.05s;*/
 }
 
 

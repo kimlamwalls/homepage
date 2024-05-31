@@ -1,16 +1,86 @@
 {% extends "base.html" %}
-{% block title %}Welcome to the Blog{% endblock %}
-{% block post_links %}
-    {% for post in posts %}
-    <li><a href="{{ url_for('post', post_slug=post['slug']) }}">{{ post['title'] }}</a></li>
-    {% endfor %}
-{% endblock %}
+{% block title %}Kim Walls{% endblock %}
+
+
 {% block content %}
-    <h1>Welcome to the Blog</h1>
-    <p>This is the index page.</p>
-    <div>
-        {% for div in divs %}
-        <div>{{ div }}</div>
-        {% endfor %}
+{% for post in posts %}
+        <li><a href="{{ url_for('post', post_slug=post.slug) }}">{{ post.title }}</a> - {{ post.date }}</li>
+{% endfor %}
+
+    <div class="grid-container">
+        <h2 class="section-title-h2">Music</h2>
+        <div class="grid-row-container smaller-margin-top">
+
+            <a href="{{ url_for('post', post_slug='archipelago') }}" class="grid-item grid-L">
+                <div class="grid-item-content">
+
+                    <h3>
+                        Galapagos Island - Archipelago (Live) 2024
+                    </h3>
+                    <p>
+                        Ambient 2 piece. Synthesizers, drums, piano.
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='media/archipelago.jpg') }}" alt="food1" class="grid-item-image">
+            </a>
+            <a href="#" class="grid-item grid-R">
+                <div class="grid-item-content">
+                    <h3>
+                        Galapagos Island - Archipelago (Live) 2024
+                    </h3>
+                    <p>
+                        Live set from the park OP-1 and Model Cycles
+                    </p>
+                </div>
+<!---->
+
+            </a>
+        </div>
+        <h2 class="section-title-h2">Video</h2>
+        <div class="grid-row-container smaller-margin-top">
+            <a href="#" class="grid-item grid-L">
+                <div class="grid-item-content">Card 1</div>
+                <img src="media/small.jpg" alt="food1" class="grid-item-image">
+            </a>
+            <a href="#" class="grid-item grid-R">
+                <div class="grid-item-content">Card 2</div>
+                <img src="media/small.jpg" alt="food1" class="grid-item-image">
+
+            </a>
+        </div>
+        <h2 class="section-title-h2">Games</h2>
+        <div class="grid-row-container smaller-margin-top">
+            <a href="#" class="grid-item grid-L">
+                <div class="grid-item-content">Card 1</div>
+                <img src="media/small.jpg" alt="food1" class="grid-item-image">
+            </a>
+            <a href="#" class="grid-item grid-R">
+                <div class="grid-item-content">Card 2</div>
+                <img src="media/small.jpg" alt="food1" class="grid-item-image">
+
+            </a>
+        </div>
+        <h2 class="section-title-h2">Audio Engineering</h2>
+        <div class="grid-row-container smaller-margin-top">
+            <a href="#" class="grid-item grid-L">
+                <div class="grid-item-content">Card 1</div>
+                <img src="media/small.jpg" alt="food1" class="grid-item-image">
+            </a>
+            <a href="#" class="grid-item grid-R">
+                <div class="grid-item-content">Card 2</div>
+                <img src="media/small.jpg" alt="food1" class="grid-item-image">
+            </a>
+        </div>
+
+
+
     </div>
+<!--    <div>
+        {% for div in divs %}
+        <div>{{ div }}</div> USE THIS WHEN THINGS ARE SET UP TO BE RENDERED PROPERLY
+        {% endfor %}
+    </div>-->
+
 {% endblock %}
+
+
