@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap'); /* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: rgb(236, 236, 236);
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*overwrite default titles and make sizing auto*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* SIDE BAR STYLING */
+
+.sidebar {
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    padding-top: 20px;
+}
+
+/*Test and link styling sidebar*/
+.sidebar a {
+    padding: 0.5vw 0.5vw 0.5vw 2vw;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #b2b2b2;
+    display: block;
+
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+    transition: 0.25s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTENT STYLING */
+#main {
+    margin-left: 15vw; /* This should be equal to the width of your sidebar */
+    margin-bottom: 10rem;
+    flex-grow: 1;
+}
+
+/* GRID SETUP STYLING */
+
+.grid-container {
+    diplay: block;
+    /*gap: 5%;*/
+    width: 100%;
+    margin: auto;
+}
+
+/* ==============================GRID ITEM STYLING ==========================*/
+
+.grid-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    /*evenly space */
+    width: 100%;
+    margin-top: 6vw;
+}
+
+/*Proximity to section title*/
+.smaller-margin-top{
+    margin-top: 1.5vw;
+}
+
+/*box sizing and styling*/
+.grid-item{
+    background-color: #a76b6b;
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+    position: relative;
+    text-align: center;
+    width: 35%;/*Main sizing parameter*/
+    aspect-ratio: 1 / 1;    /*maintain 1:1 aspect ratio*/
+    overflow: hidden;
+    filter: brightness(0.9); /* Hover effect to darken  the box */
+    transition: filter 0.5s;
+    /*
+    filter: blur(1px); !* Hover effect to blur the box *!
+    */
+    /*round the edges*/
+    border-radius: 0.1vw;
+}
+
+/*Hover effect*/
+.grid-item:hover {
+    /*
+    transform: scale(1.05); !* Hover effect to enlarge the box slightly *!
+    */
+    /*
+    transition: transform 0.3s;
+    */
+    filter: brightness(1); /* Hover effect to brighten the box */
+    transition: filter 0.15s;
+    /*    filter: blur(0px); !* Hover effect to blur the box *!
+        transition: filter 0.05s;*/
+}
+
+
+
+/*Evenly space grid items the from the middle, based on viewport width*/
+.grid-L{
+    margin-left: auto;
+    margin-right:5%;
+}
+
+.grid-R{
+    margin-right: auto;
+    margin-left:5%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
+    display: block;
+    z-index: 1; /* Place the image behind the text */
+    position: absolute; /* Ensure the image fills the grid item */
+    top: 0;
+    left: 0;
+    /*add darken filter to soften the image*/
+    filter: brightness(0.95);
+    filter: blur(0.5px); /* Hover effect to blur the image */
+    transition: 0.6s;
+}
+
+/*=====EXPERIMENTAL VIDEO TESTING*/
+.grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fits within the container */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place the video behind the text */
+    pointer-events: none; /* Prevents the video from being interacted with */
+}
+
+
+.grid-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Move content to the bottom */
+    align-items: flex-start; /* Align content to the left */
+    /* Add padding for spacing */
+    padding: 1.5vw 1.5vw 1vw;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    background: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background */
+    transition: background 0.6s;
+}
+
+.grid-item:hover .grid-item-content{
+    background: rgba(0, 0, 0, 0.4); /* Hover effect to darken the text background */
+    transition: background 0.15s;
+}
+
+.grid-item:hover img{
+    /*blur */
+    filter: blur(0px);  !important;/* Hover effect to blur the image */
+    transition: filter 0.15s;
+}
+
+
+/*Card Title*/
+.grid-item-content h3 {
+    font-size: 1vw;
+    font-weight: 600;
+    margin-bottom: 0.5vw;
+}
+/*Card P styling*/
+.grid-item-content p {
+    font-size: 1vw;
+    font-weight: 50;
+    margin-bottom: 0.5vw;
+    text-align: left;
+}
+
+.section-title-h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    align-content: center;
+    justify-content: center;
+    margin-left: 8.4vw;
+    width: fit-content;
+    padding-top: 5vw;
+}
+
+/* ==========FOOTER STYLING============= */
+footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    height: 10rem;
+}
