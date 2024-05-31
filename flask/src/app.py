@@ -13,9 +13,7 @@ def get_posts():
     posts = []
     base_dir = os.path.dirname(__file__)
     posts_dir = os.path.join(base_dir, 'pages', 'posts')
-
-    logging.debug(f"Getting posts from directory: {posts_dir}")
-
+    #logging.debug(f"Getting posts from directory: {posts_dir}")
     for filepath in glob.glob(os.path.join(posts_dir, "*.md")):
         with open(filepath, 'r') as file:
             fileContent = file.read()
@@ -23,19 +21,32 @@ def get_posts():
             post = {
                 'title': md.metadata.get('title', 'No title'),
                 'date': md.metadata.get('date', 'No date'),
+                'image': md.metadata.get('image', None),
+                'roles': md.metadata.get('roles', None),
+                'card_image': md.metadata.get('card_image', None),
+                'card_image_alt': md.metadata.get('card_image_alt', None),
+                'card_video': md.metadata.get('card_video', None),
+                'description': md.metadata.get('description', 'No description'),
+                'category': md.metadata.get('category', None),
                 'content': md,
                 'slug': os.path.basename(filepath).split('.')[0]
             }
             posts.append(post)
-            logging.debug(f"Post: {post}")
+            #logging.debug(f"Post: {post}")
     return posts
 
+
+def get_categories(posts):
+    categories = {post['category'] for post in posts if post['category']}
+    return sorted(categories)  # Return a sorted list of categories
 
 @app.route('/')
 def index():
     logging.debug("Index page")
     posts = get_posts()
-    return render_template('index.html', posts=posts)
+    categories = get_categories(posts)
+    logging.debug(f"Categories: {categories}")
+    return render_template('index.html', posts=posts, categories=categories)
 
 
 @app.route('/post/<post_slug>/')

@@ -1,10 +1,21 @@
 {% extends "base.html" %}
 {% block title %}Kim Walls{% endblock %}
 
-
 {% block content %}
+<div class="post-container">
     <h1>{{ post.title }}</h1>
-    <p>{{ post.date }}</p>
-    <div>{{ post.content|safe }}</div>
-    <a href="{{ url_for('index') }}">Back to Home</a>
+    <!--Roles-->
+    <h2>{{ post.date }}</h2>
+    {% if post.roles %}
+    <h3>{{ post.roles }}</h3>
+    {% endif %}
+
+
+<!--if image in .md metadata, display it!-->
+
+    {% if post.image and post.image != 'No Image' %}
+        <img src="{{ url_for('static', filename='/media/' + post.image) }}" alt="{{ post.title }}" class="post-img-main">
+    {% endif %}
+    <div class="post-content">{{ post.content|safe }}</div>
+</div>
 {% endblock %}

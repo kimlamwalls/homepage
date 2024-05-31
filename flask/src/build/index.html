@@ -9,118 +9,215 @@
     <meta name="description" content="description here">
     <meta name="keywords" content="keywords, here">
     <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://kit.fontawesome.com/6677827898.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <body>
 <nav id="sidebar" class="sidebar">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <!--title
+   -->
+    <h1 class="logo-text"><a href="/">Kim Walls</a></h1>
+    <h2 class="nav-link"><a href="/">Music</a></h2>
+    <h2 class="nav-link"><a href="/">Video</a></h2>
+    <h2 class="nav-link"><a href="/">Games</a></h2>
+    <h2 class="nav-link"><a href="/">Software</a></h2>
+    <h2 class="nav-link"><a href="/">Design</a></h2>
+    <h2 class="nav-link"><a href="/">About</a></h2>
+
+      <footer>
+
+                <h2><a href="/">Back to Home</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+            <!--links-->
+                <ul>
+                    <li><a href="https://www.instagram.com/simple_soybean_drink/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/@potatothistle"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/kim-walls-b08b988a/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/kimlamwalls"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+    </footer>
 </nav>
 
     <main id="main">
         
 
-        <li><a href="/post/archipelago/">&#34;Archipelago&#34;</a> - &#34;2023-05-30&#34;</li>
 
-
-    <div class="grid-container">
-        <h2 class="section-title-h2">Music</h2>
-        <div class="grid-row-container smaller-margin-top">
-
-            <a href="/post/archipelago/" class="grid-item grid-L">
-                <div class="grid-item-content">
-
-                    <h3>
-                        Galapagos Island - Archipelago (Live) 2024
-                    </h3>
-                    <p>
-                        Ambient 2 piece. Synthesizers, drums, piano.
-                    </p>
-                </div>
-                <img src="/static/media/archipelago.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">
-                    <h3>
-                        Galapagos Island - Archipelago (Live) 2024
-                    </h3>
-                    <p>
-                        Live set from the park OP-1 and Model Cycles
-                    </p>
-                </div>
-<!---->
-
-            </a>
-        </div>
-        <h2 class="section-title-h2">Video</h2>
-        <div class="grid-row-container smaller-margin-top">
-            <a href="#" class="grid-item grid-L">
-                <div class="grid-item-content">Card 1</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">Card 2</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-
-            </a>
-        </div>
-        <h2 class="section-title-h2">Games</h2>
-        <div class="grid-row-container smaller-margin-top">
-            <a href="#" class="grid-item grid-L">
-                <div class="grid-item-content">Card 1</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">Card 2</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-
-            </a>
-        </div>
-        <h2 class="section-title-h2">Audio Engineering</h2>
-        <div class="grid-row-container smaller-margin-top">
-            <a href="#" class="grid-item grid-L">
-                <div class="grid-item-content">Card 1</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-            <a href="#" class="grid-item grid-R">
-                <div class="grid-item-content">Card 2</div>
-                <img src="media/small.jpg" alt="food1" class="grid-item-image">
-            </a>
-        </div>
-
-
-
-    </div>
-<!--    <div>
+<section id="Design">
+    <h2 class="section-title-h2">Design</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
         
-    </div>-->
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/this-website/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>This Website</h3>
+                    <p>Designer, developer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+<section id="Music">
+    <h2 class="section-title-h2">Music</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/archipelago/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>Galapagos Island - Archipelago (Live)</h3>
+                    <p>Composer, performer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+<section id="Photo">
+    <h2 class="section-title-h2">Photo</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/climbing-photography/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>Climbing Photography</h3>
+                    <p>Photographer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+<section id="Video">
+    <h2 class="section-title-h2">Video</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/dolphin-wine/" class="grid-item grid-L">
+                <div class="grid-item-content">
+                    <h3>Dolphin - Wine</h3>
+                    <p>Director, camera operator, editor</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+         <!--loop through posts in category-->
+    
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/hammer-on-the-door/" class="grid-item grid-R">
+                <div class="grid-item-content">
+                    <h3>Treehouse - Hammer on the Door Music Video</h3>
+                    <p>Director, camera operator, editor</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/test.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
 
 
     </main>
 
 </body>
-
-<footer>
-    <!--all the footer content, heading links, info-->
-    <div class="footer-content">
-        <div class="footer-section about">
-            <h1 class="logo-text">Footer Info</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Quisquam, quos.
-            </p>
-            <div class="contact">
-                <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
-                <span><i class="fas fa-envelope"></i> &nbsp;</span>
-
-            </div>
-        </div>
-    </div>
-
-</footer>
-
 </body>
 </html>
