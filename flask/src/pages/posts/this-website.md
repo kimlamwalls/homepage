@@ -12,3 +12,4 @@ card_image_alt: Album cover for Archipelago (Live)
 Designed and developed this website using Flask, Python, Jinja and Flask-freezer.
 
 
+TODO include some images of drafts and concepts
