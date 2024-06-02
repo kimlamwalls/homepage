@@ -17,13 +17,25 @@
 <nav id="sidebar" class="sidebar">
     <!--title
    -->
-    <h1 class="logo-text"><a href="/">Kim Walls</a></h1>
-    <h2 class="nav-link"><a href="/">Music</a></h2>
-    <h2 class="nav-link"><a href="/">Video</a></h2>
-    <h2 class="nav-link"><a href="/">Games</a></h2>
-    <h2 class="nav-link"><a href="/">Software</a></h2>
-    <h2 class="nav-link"><a href="/">Design</a></h2>
-    <h2 class="nav-link"><a href="/">About</a></h2>
+
+   <h1 class="logo-text"><a href="/">Kim Walls</a></h1>
+
+    <!--link that scrolls to relevant category-->
+    
+    <h2 class="nav-link"><a href="#Audio Engineering">Audio Engineering</a></h2>
+    
+    <h2 class="nav-link"><a href="#Design">Design</a></h2>
+    
+    <h2 class="nav-link"><a href="#Games">Games</a></h2>
+    
+    <h2 class="nav-link"><a href="#Music">Music</a></h2>
+    
+    <h2 class="nav-link"><a href="#Photography">Photography</a></h2>
+    
+    <h2 class="nav-link"><a href="#Video">Video</a></h2>
+    
+
+
 
       <footer>
 
@@ -42,6 +54,65 @@
     <main id="main">
         
 
+
+<section id="Audio Engineering">
+    <h2 class="section-title-h2">Audio Engineering</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/centre-of-their-world/" class="grid-item grid-L">
+                <div class="grid-item-content">
+                    <h3>Treehouse - Centre of their World</h3>
+                    <p>Producer, Engineer, Mixer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/centre-of-their-world.jpg" alt="Album cover for Centre of their World"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+         <!--loop through posts in category-->
+    
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/for-the-worms/" class="grid-item grid-R">
+                <div class="grid-item-content">
+                    <h3>All the Weathers - For the Worms</h3>
+                    <p>Producer, Engineer, Mixer, Photographer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/for-the-worms.jpg" alt="Album cover for For the Worms"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
 
 <section id="Design">
     <h2 class="section-title-h2">Design</h2>
@@ -65,8 +136,42 @@
                 </div>
                 <!--if post has image file, render that-->
                 
-                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
+                <img src="/static/media/this-website.jpg" alt="Screenshot of this website"
                      class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+<section id="Games">
+    <h2 class="section-title-h2">Games</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/high-score/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>High Score Workshop</h3>
+                    <p>Composer, Sound Designer</p>
+                </div>
+                <!--if post has image file, render that-->
                 
 
             </a>
@@ -117,8 +222,8 @@
     </div>
 </section>
 
-<section id="Photo">
-    <h2 class="section-title-h2">Photo</h2>
+<section id="Photography">
+    <h2 class="section-title-h2">Photography</h2>
       <!--zero post counter for new category-->
      <!--loop through posts in category-->
      <!--if first post in category-->
@@ -130,16 +235,68 @@
             
             <!--if its last post and odd-->
             
-            
-            
-            <a href="/post/climbing-photography/" class="grid-item last-single-grid-item">
+            <a href="/post/climbing-photography/" class="grid-item grid-L">
                 <div class="grid-item-content">
-                    <h3>Climbing Photography</h3>
+                    <h3>Climbing</h3>
+                    <p>Photographer, Climberer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/dave-highball.jpg" alt="climber on a highball boulder problem"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+         <!--loop through posts in category-->
+    
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/portraits/" class="grid-item grid-R">
+                <div class="grid-item-content">
+                    <h3>Portraits</h3>
                     <p>Photographer</p>
                 </div>
                 <!--if post has image file, render that-->
                 
-                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
+                <img src="/static/media/jon.jpg" alt="Portrait of Jon"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+         <!--loop through posts in category-->
+     <!-- else if post counter is greater than 2 and even-->
+        <div class="grid-row-container"> <!-- create new normal row-->
+            
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/shouting-in-caps/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>The Pits - Shouting in Caps - Rear LP cover</h3>
+                    <p>Photographer</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/shouting-in-caps.jpg" alt="Shouting in Caps - The Pits - Rear album cover"
                      class="grid-item-image">
                 
 
@@ -169,13 +326,15 @@
             
             <a href="/post/dolphin-wine/" class="grid-item grid-L">
                 <div class="grid-item-content">
-                    <h3>Dolphin - Wine</h3>
+                    <h3>Dolphin - Wine - Music Video</h3>
                     <p>Director, camera operator, editor</p>
                 </div>
                 <!--if post has image file, render that-->
                 
-                <img src="/static/media/archipelago.jpg" alt="Album cover for Archipelago (Live)"
-                     class="grid-item-image">
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/dolphin-wine.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
                 
 
             </a>
@@ -193,14 +352,70 @@
             
             <a href="/post/hammer-on-the-door/" class="grid-item grid-R">
                 <div class="grid-item-content">
-                    <h3>Treehouse - Hammer on the Door Music Video</h3>
+                    <h3>Treehouse - Hammer on the Door - Music Video</h3>
                     <p>Director, camera operator, editor</p>
                 </div>
                 <!--if post has image file, render that-->
                 
                 <!--if post has video file, render that-->
                 <video width="240" height="240" autoplay muted loop playsinline>
-                    <source src="/static/media/test.mp4" type="video/mp4" />
+                    <source src="/static/media/hammer-on-the-door.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+         <!--loop through posts in category-->
+     <!-- else if post counter is greater than 2 and even-->
+        <div class="grid-row-container"> <!-- create new normal row-->
+            
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/mount-trout-tarn/" class="grid-item grid-L">
+                <div class="grid-item-content">
+                    <h3>Mount Trout - Tarn - Music Video</h3>
+                    <p>Director, camera operator, editor</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/mount-trout-tarn.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+         <!--loop through posts in category-->
+    
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/quivers-jackelope/" class="grid-item grid-R">
+                <div class="grid-item-content">
+                    <h3>Quivers - Jackelope - Music Video</h3>
+                    <p>Director, camera operator, editor</p>
+                </div>
+                <!--if post has image file, render that-->
+                
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/quivers-jackelope.mp4" type="video/mp4" />
                     Your browser does not support the video tag.</video>
                 
 
