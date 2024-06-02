@@ -1,11 +1,11 @@
 ---
-title: Dolphin - Wine - Music Video
-date: 2020
+title: Mount Trout - Tarn - Music Video
+date: 2016
 category: Video
 roles: Director, camera operator, editor
-description: Music video for Dolphin's song "Wine"
-card_video: dolphin-wine.mp4
-card_image_alt: clip from the dolphin wine music video
+description: Music video for Mount Trout's song "Tarn"
+card_video: mount-trout-tarn.mp4
+card_image_alt: 
 ---
 
 Music video for Dolphin's song "Wine".

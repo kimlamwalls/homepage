@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'SF Pro Display', sans-serif;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(220, 220, 220);
     color: #333;
 }
 
@@ -31,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar {
     height: 100vh;
-    width: 15%;
+    width: 16.5%;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,14 +51,14 @@ nav a {
 }
 
 nav h1 {
-    padding: 2vw 0vw 2vw 3vw;
+    padding: 2vw 0vw 2vw 2.5vw;
     font-size: 1.8vw;
     color: #f1f1f1;
     text-align: left;
     font-weight: 350;
 }
 nav h2{
-    padding: 0.6vw 0vw 0.6vw 3vw;
+    padding: 0.6vw 0vw 0.6vw 2.5vw;
     font-size: 1.5vw;
     text-align: left;
     font-weight: 250;
@@ -73,240 +77,7 @@ nav a:hover {
     text-decoration-color: #f1f1f1;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.3em;
-
 }
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* MAIN CONTENT STYLING */
-#main {
-    margin-left: 15vw; /* This should be equal to the width of your sidebar */
-    margin-bottom: 10rem;
-    flex-grow: 1;
-}
-
-/* GRID SETUP STYLING */
-
-.grid-container {
-    diplay: block;
-    /*gap: 5%;*/
-    width: 100%;
-    margin: auto;
-}
-
-/* ==============================GRID ITEM STYLING ==========================*/
-
-.grid-row-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: flex-start;
-    /*evenly space */
-    width: 100%;
-    margin-top: 6vw;
-}
-
-/*Proximity to section title*/
-.smaller-margin-top{
-    margin-top: 1.5vw;
-}
-
-/*box sizing and styling*/
-.grid-item{
-    background-color: #a76b6b;
-    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
-    position: relative;
-    text-align: center;
-    width: 35%;/*Main sizing parameter*/
-    aspect-ratio: 1 / 1;    /*maintain 1:1 aspect ratio*/
-    overflow: hidden;
-    filter: brightness(0.9); /* Hover effect to darken  the box */
-    transition: filter 0.5s;
-    /*
-    filter: blur(1px); !* Hover effect to blur the box *!
-    */
-    /*round the edges*/
-    border-radius: 0.1vw;
-}
-
-/*Hover effect*/
-.grid-item:hover {
-    /*
-    transform: scale(1.05); !* Hover effect to enlarge the box slightly *!
-    */
-    /*
-    transition: transform 0.3s;
-    */
-    filter: brightness(1); /* Hover effect to brighten the box */
-    transition: filter 0.15s;
-    /*    filter: blur(0px); !* Hover effect to blur the box *!
-        transition: filter 0.05s;*/
-}
-
-/*Evenly space grid items the from the middle, based on viewport width*/
-.grid-L{
-    margin-right:5%;
-    margin-left: auto;
-}
-
-.grid-R{
-    margin-left:5%;
-    margin-right: auto;
-}
-
-.last-single-grid-item{
-    margin-right: auto;
-    margin-left: 8.512vw;
-}
-
-.grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* Ensures the image fits within the container */
-    display: block;
-    z-index: 1; /* Place the image behind the text */
-    position: absolute; /* Ensure the image fills the grid item */
-    top: 0;
-    left: 0;
-    /*add darken filter to soften the image*/
-    filter: brightness(0.95);
-    filter: blur(0.5px); /* Hover effect to blur the image */
-    transition: 0.6s;
-}
-
-/*=====EXPERIMENTAL VIDEO TESTING*/
-.grid-item video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the video fits within the container */
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1; /* Place the video behind the text */
-    pointer-events: none; /* Prevents the video from being interacted with */
-}
-
-
-.grid-item-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Move content to the bottom */
-    align-items: flex-start; /* Align content to the left */
-    /* Add padding for spacing */
-    padding: 1.5vw 1.5vw 1vw;
-    position: absolute;
-    top: auto;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    color: white;
-    background: rgba(0, 0, 0, 0.3); /* Add a semi-transparent background */
-    transition: background 0.6s;
-}
-
-.grid-item:hover .grid-item-content{
-    background: rgba(0, 0, 0, 0.4); /* Hover effect to darken the text background */
-    transition: background 0.15s;
-}
-
-.grid-item:hover img{
-    /*blur */
-    filter: blur(0px);  !important;/* Hover effect to blur the image */
-    transition: filter 0.15s;
-}
-
-/*Card Title*/
-.grid-item-content h3 {
-    font-size: 1vw;
-    font-weight: 600;
-    margin-bottom: 0.5vw;
-}
-/*Card P styling*/
-.grid-item-content p {
-    font-size: 1vw;
-    font-weight: 50;
-    margin-bottom: 0.5vw;
-    text-align: left;
-}
-
-.section-title-h2 {
-    font-size: 4vw;
-    font-weight: 300;
-    align-content: center;
-    justify-content: center;
-    margin-left: 8.4vw;
-    width: fit-content;
-    padding-top: 5vw;
-}
-
-
-/*===================POST PAGE STYLING===========*/
-/*set to roughly the middle of the page*/
-.post-container {
-    display: block;
-    margin: auto;
-    width:75%;
-    margin-top: 5vw;
-    color: black; !important;
-}
-
-.post-container h1{
-    font-size: 2vw;
-    font-weight: 500;
-    margin-bottom: 1vw;
-}
-
-.post-container h2 {
-    font-size: 1.6vw;
-    font-weight: 300;
-    margin-bottom: 1vw;
-}
-
-.post-container h3 {
-    font-size: 1vw;
-    font-weight: 300;
-    margin-bottom: 1vw;
-}
-
-.post-content p{
-    padding-top: 2vw;
-    font-size: 1vw;
-    font-weight: 420;
-    padding-bottom: 2vw;
-    text-align: left;
-}
-
-.post-img-main{
-    width: 20vw;
-    object-fit: contain; /* Ensures the image fits within the container */
-    display: block;
-    /*add darken filter to soften the image*/
-    filter: brightness(0.95);
-}
-
-.video-link {
-        text-align: left;
-
-    }
-    .video-link img {
-        max-width: 100%;
-        height: auto;
-        cursor: pointer;
-    }
-    .video-link p {
-        font-size: 16px;
-        color: #006e8a;
-        text-decoration: underline;
-        cursor: pointer;
-        padding-top: 1em;
-    }
 
 
 /* ==========FOOTER STYLING============= */
@@ -316,7 +87,7 @@ footer {
     background-color: #000000;
     color: #ffffff;
     height: auto;
-    padding-left: 2rem;
+    padding-left: 2.5vw;
     /*place   the footer at the  bottom  of the screen*/
     position: absolute;
     bottom: 5vh;
@@ -375,7 +146,7 @@ footer ul {
     gap: 1vw; /* Add space between the icons */
 }
 
-ul li{
+footer ul li{
     display: inline;
     padding:0;
 }
@@ -392,4 +163,269 @@ ul li a:hover{
     filter: drop-shadow(5px 5px 8px rgba(255, 244, 190, 0.12));
 
 }
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTENT STYLING */
+#main {
+    margin-left: 15vw; /* This should be equal to the width of your sidebar */
+    margin-bottom: 10rem;
+    flex-grow: 1;
+}
+
+/* GRID SETUP STYLING */
+
+.grid-container {
+    diplay: block;
+    /*gap: 5%;*/
+    width: 100%;
+    margin: auto;
+}
+
+/* ==============================GRID ITEM STYLING ==========================*/
+
+.grid-row-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: flex-start;
+    /*evenly space */
+    width: 100%;
+    margin-top: 6vw;
+}
+
+/*Proximity to section title*/
+.smaller-margin-top{
+    margin-top: 1.5vw;
+}
+
+/*box sizing and styling*/
+.grid-item{
+    position: relative;
+    text-align: center;
+    width: 35%;/*Main sizing parameter*/
+    aspect-ratio: 1 / 1;    /*maintain 1:1 aspect ratio*/
+    overflow: hidden;
+    filter: brightness(0.9); /* Hover effect to darken  the box */
+    transition: filter 0.5s;
+    /*round the edges*/
+    border-radius: 0.1vw;
+}
+
+/*Hover effect*/
+.grid-item:hover {
+    filter: brightness(1); /* Hover effect to brighten the box */
+    transition: filter 0.15s;
+    /*    filter: blur(0px); !* Hover effect to blur the box *!
+        transition: filter 0.05s;*/
+}
+
+/*Evenly space grid items the from the middle, based on viewport width*/
+.grid-L{
+    margin-right:5%;
+    margin-left: auto;
+}
+
+.grid-R{
+    margin-left:5%;
+    margin-right: auto;
+}
+
+.last-single-grid-item{
+    margin-right: auto;
+    margin-left: 8.512vw;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
+    display: block;
+    z-index: 1; /* Place the image behind the text */
+    position: absolute; /* Ensure the image fills the grid item */
+    top: 0;
+    left: 0;
+    /*add darken filter to soften the image*/
+    filter: brightness(0.95);
+    filter: blur(0.2px); /* effect to blur the image */
+    transition: 0.6s;
+}
+
+/*=====EXPERIMENTAL VIDEO TESTING*/
+.grid-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fits within the container */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place the video behind the text */
+    pointer-events: none; /* Prevents the video from being interacted with */
+}
+
+
+.grid-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Move content to the bottom */
+    align-items: flex-start; /* Align content to the left */
+    /* Add padding for spacing */
+    padding: 1.5vw 1.5vw 1vw;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    color: white;
+    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background */
+    transition: background 0.6s;
+}
+
+.grid-item:hover .grid-item-content{
+    background: rgba(0, 0, 0, 0.8); /* Hover effect to darken the text background */
+    transition: background 0.15s;
+}
+
+.grid-item:hover img{
+    /*blur */
+    filter: blur(0px);  !important;/* Hover effect to blur the image */
+    transition: filter 0.15s;
+}
+
+/*Card Title*/
+.grid-item-content h3 {
+    font-size: 1vw;
+    font-weight: 600;
+    margin-bottom: 0.5vw;
+}
+/*Card P styling*/
+.grid-item-content p {
+    font-size: 1vw;
+    font-weight: 100;
+    margin-bottom: 0.5vw;
+    text-align: left;
+}
+
+.section-title-h2 {
+    font-size: 3vw;
+    font-weight: 300;
+    align-content: center;
+    justify-content: center;
+    margin-left: 8.4vw;
+    width: fit-content;
+    padding-top: 5vw;
+}
+
+
+/*===================POST PAGE STYLING===========*/
+/*set to roughly the middle of the page*/
+.post-container {
+    display: block;
+    margin: auto;
+    width:75%;
+    margin-top: 5vw;
+    color: black; !important;
+}
+
+.post-container h1{
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+.post-container h2 {
+    font-size: 1.6vw;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+.post-container h3 {
+    font-size: 1vw;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+.post-content p{
+    padding: 0;
+    font-size: 1vw;
+    font-weight: 420;
+    text-align: left;
+    margin-bottom: 1.1vw;
+}
+
+.post-content ul {
+    font-size: 1vw;
+    font-weight: 600;
+    padding:0 ;
+    text-align: left;
+    /*display make list stack vertically*/
+    display: block;
+    margin-bottom: 1.1vw;
+}
+
+.post-content a {
+    font-size: 1vw;
+    font-weight: 600;
+    padding:0 ;
+    text-align: left;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.post-content a:hover {
+    color: #0056b3;
+    transition: color 0.1s;
+}
+
+.post-content em{
+    font-size: 1vw;
+    font-weight: 600;
+    padding:0 ;
+    text-align: left;
+
+}
+.post img{
+    width: 100%;
+    object-fit: contain; /* Ensures the image fits within the container */
+    display: block;
+    /*add darken filter to soften the image*/
+    filter: brightness(0.95);
+}
+
+
+
+.post-img-main{
+    width: 20vw;
+    object-fit: contain; /* Ensures the image fits within the container */
+    display: block;
+    /*add darken filter to soften the image*/
+    filter: brightness(0.95);
+}
+
+.video-link {
+        text-align: left;
+
+    }
+    .video-link img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+    .video-link p {
+        font-size: 16px;
+        color: #006e8a;
+        text-decoration: underline;
+        cursor: pointer;
+        padding-top: 1em;
+    }
+
 

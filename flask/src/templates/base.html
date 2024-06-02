@@ -17,13 +17,15 @@
 <nav id="sidebar" class="sidebar">
     <!--title
    -->
-    <h1 class="logo-text"><a href="{{ url_for('index') }}">Kim Walls</a></h1>
-    <h2 class="nav-link"><a href="{{ url_for('index') }}">Music</a></h2>
-    <h2 class="nav-link"><a href="{{ url_for('index') }}">Video</a></h2>
-    <h2 class="nav-link"><a href="{{ url_for('index') }}">Games</a></h2>
-    <h2 class="nav-link"><a href="{{ url_for('index') }}">Software</a></h2>
-    <h2 class="nav-link"><a href="{{ url_for('index') }}">Design</a></h2>
-    <h2 class="nav-link"><a href="{{ url_for('index') }}">About</a></h2>
+
+   <h1 class="logo-text"><a href="{{ url_for('index') }}">Kim Walls</a></h1>
+
+    <!--link that scrolls to relevant category-->
+    {%for category in categories %}
+    <h2 class="nav-link"><a href="#{{ category }}">{{ category }}</a></h2>
+    {% endfor %}
+
+
 
       <footer>
 

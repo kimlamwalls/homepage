@@ -1,11 +1,11 @@
 ---
-title: Climbing Photography
+title: Climbing
 date: 2015-present
-category: Photo
-roles: Photographer
+category: Photography
+roles: Photographer, Climberer
 description: Stuff
-card_image: archipelago.jpg
-card_image_alt: Album cover for Archipelago (Live)
+card_image: dave-highball.jpg
+card_image_alt: climber on a highball boulder problem
 ---
 
 

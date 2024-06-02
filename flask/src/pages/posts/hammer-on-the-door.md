@@ -1,10 +1,10 @@
 ---
-title: Treehouse - Hammer on the Door Music Video
+title: Treehouse - Hammer on the Door - Music Video
 date: 2017
 category: Video
 roles: Director, camera operator, editor
 description: Music video for Treehouse's song "Hammer on the Door"
-card_video: test.mp4
+card_video: hammer-on-the-door.mp4
 
 ---
 
