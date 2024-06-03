@@ -1,7 +1,7 @@
 ---
 title: Dolphin - Wine - Music Video
 date: 2020
-category: Video
+category: Music Video
 roles: Director, camera operator, editor
 description: Music video for Dolphin's song "Wine"
 card_video: dolphin-wine.mp4

@@ -52,9 +52,10 @@ def index():
 @app.route('/post/<post_slug>/')
 def post(post_slug):
     posts = get_posts()
+    categories = get_categories(posts)
     post = next((post for post in posts if post['slug'] == post_slug), None)
     if post:
-        return render_template('post.html', post=post)
+        return render_template('post.html', post=post, categories=categories)
     else:
         logging.debug(f"Post with slug {post_slug} not found, redirecting to index")
         return redirect(url_for('index'))

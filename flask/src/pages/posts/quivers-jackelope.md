@@ -1,7 +1,7 @@
 ---
 title: Quivers - Jackelope - Music Video
 date: 2019
-category: Video
+category: Music Video
 roles: Director, camera operator, editor
 description: Music video for Quivers' song "Jackelope"
 card_video: quivers-jackelope.mp4

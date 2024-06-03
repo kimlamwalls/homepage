@@ -17,18 +17,13 @@
 <nav id="sidebar" class="sidebar">
     <!--title
    -->
-
    <h1 class="logo-text"><a href="{{ url_for('index') }}">Kim Walls</a></h1>
 
     <!--link that scrolls to relevant category-->
     {%for category in categories %}
     <h2 class="nav-link"><a href="#{{ category }}">{{ category }}</a></h2>
     {% endfor %}
-
-
-
       <footer>
-
                 <h2><a href="{{ url_for('index') }}">Back to Home</a></h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
             <!--links-->

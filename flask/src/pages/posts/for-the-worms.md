@@ -10,5 +10,21 @@ card_image_alt:  Album cover for For the Worms
 
 All the Weathers' For the Worms, was recorded in a temporary home studio in Hobart, Tasmania. The album was released on vinyl LP and digital formats.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3Zbs5AUzeSA?si=5uhUoxfPXjqgGO-S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="/static/media/for-the-worms.jpg" alt="Climbing Photo 1">
+        <div class="caption">front cover</div>
+    </div>
+    <div class="gallery-item">
+        <img src="/static/media/for-the-worms-rear.jpg" alt="Climbing Photo 1">
+        <div class="caption">rear cover</div>
+    </div>
+</div>
+
+
+<gallery
+
+Link to the album on <a href="https://alltheweathers.bandcamp.com/album/for-the-worms" target="_blank">Bandcamp Link</a> 
+```
+
 

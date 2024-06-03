@@ -4,7 +4,7 @@ date: 2024
 category: Games
 roles: Composer, Sound Designer
 description: Composed and arrange sound and music for a video game workshop.
-card_image:
+card_image: 
 card_image_alt: High Score Workshop
 ---
 
