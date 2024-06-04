@@ -13,8 +13,11 @@ A short documentary on Georgia Lucy's creative process.
 
 Created with Georgia for a TV show called Clip Art 
 
-https://www.imdb.com/title/tt7932746/
 
-https://georgialucy.com/
+IMDB:
+<a href="https://www.imdb.com/title/tt7932746/" target="_blank">Clip Art IMDB</a>
+
+Georgia's website:
+<a href="https://georgialucy.com/" target="_blank">georgialucy.com</a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AYtsgML3J3o?si=28NdV-t73xu98_Q4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
