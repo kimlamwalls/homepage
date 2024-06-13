@@ -4,25 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}Kim Walls{% endblock %}</title>
+    <title>Kim Walls</title>
     <meta name="author" content="Kim Walls">
-    <meta name="description" content="description here">
-    <meta name="keywords" content="keywords, here">
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="Things I gone and done">
+    <meta name="keywords" content="Kim Walls, music, video, games, software, ambient music, synthesizers, drums, piano, climbing photography, live performances, coding projects, open-source software, software development, video production, game development">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <script src="https://kit.fontawesome.com/6677827898.js" crossorigin="anonymous"></script>
+    <!--add links to icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='icons/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='icons/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='icons/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='icons/site.webmanifest') }}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://kimlamwalls.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kim Walls">
+    <meta property="og:description" content="Things I gone and done">
+    <meta property="og:image" content="{{ url_for('static', filename='icons/preview.jpg') }}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="kimlamwalls.com">
+    <meta property="twitter:url" content="https://kimlamwalls.com">
+    <meta name="twitter:title" content="Kim Walls">
+    <meta name="twitter:description" content="Things I gone and done">
+    <meta name="twitter:image" content="{{ url_for('static', filename='icons/preview.jpg') }}">
+
 </head>
 
 
 <body>
+    <!--Mobile specific menus-->
+<div class="mobile-top-bar">
+       <div class="hamburger-menu" id="hamburger-menu">
+            &#9776; <!-- Hamburger icon -->
+        </div>
+</div>
+
 <nav id="sidebar" class="sidebar">
-    <!--title
-   -->
+        <!--title-->
    <h1 class="logo-text"><a href="{{ url_for('index') }}">Kim Walls</a></h1>
 
     <!--link that scrolls to relevant category-->
     <!--if page is index, link to scroll to relevant category-->
     <!--if page is not index, link to index + relevant category-->
-
     {%for category in categories %}
     <h2 class="nav-link"><a href="{{ url_for('index')}}#{{category}}">{{ category }}</a></h2>
     {% endfor %}
@@ -43,5 +70,25 @@
         {% block content %}
         {% endblock content%}
     </main>
+
+<script>
+    document.getElementById("hamburger-menu").onclick = function() {
+        var sidebar = document.getElementById("sidebar");
+        if (sidebar.style.display === "block") {
+            sidebar.style.opacity = "0";
+            /*wait 0.5 second then set display to none*/
+            setTimeout(function() {
+                sidebar.style.display = "none";
+            }, 500);
+        } else {
+            sidebar.style.display = "block";
+            sidebar.style.opacity = "0";
+            /*wait 0.1 second then set opacity to 1, transition will fade it*/
+            setTimeout(function() {
+                sidebar.style.opacity = "1";
+            }, 100);
+        }
+    }
+</script>
 </body>
 </html>

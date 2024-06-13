@@ -78,6 +78,10 @@ Here are a few of them.
         <img src="/static/media/climbing-photography/16.jpg" alt="Climbing Photo 16">
         <div class="caption">Climbing Photo 16</div>
     </div>
+    <div class="gallery-item">
+        <img src="/static/media/climbing-photography/david-bouldering.jpg" alt="David bouldering">
+        <div class="caption">David bouldering</div>
+    </div>
 </div>
 
 
