@@ -1,5 +1,5 @@
 ---
-title: Treehouse - Hammer on the Door - Music Video
+title: Treehouse - Hammer on the Door
 date: 2017
 category: Music Video
 roles: Director, camera operator, editor

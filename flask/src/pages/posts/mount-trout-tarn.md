@@ -1,5 +1,5 @@
 ---
-title: Mount Trout - Tarn - Music Video
+title: Mount Trout - Tarn
 date: 2016
 category: Music Video
 roles: Director, camera operator, editor

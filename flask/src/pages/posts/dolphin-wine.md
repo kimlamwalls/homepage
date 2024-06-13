@@ -1,5 +1,5 @@
 ---
-title: Dolphin - Wine - Music Video
+title: Dolphin - Wine
 date: 2020
 category: Music Video
 roles: Director, camera operator, editor

@@ -72,23 +72,57 @@
     </main>
 
 <script>
-    document.getElementById("hamburger-menu").onclick = function() {
-        var sidebar = document.getElementById("sidebar");
-        if (sidebar.style.display === "block") {
-            sidebar.style.opacity = "0";
-            /*wait 0.5 second then set display to none*/
-            setTimeout(function() {
-                sidebar.style.display = "none";
-            }, 500);
-        } else {
-            sidebar.style.display = "block";
-            sidebar.style.opacity = "0";
-            /*wait 0.1 second then set opacity to 1, transition will fade it*/
-            setTimeout(function() {
-                sidebar.style.opacity = "1";
-            }, 100);
+
+    /*select all nav-link classes*/
+    document.querySelectorAll('.nav-link').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (window.innerWidth <= 600) {
+                console.log("is mobile");
+                const sidebar = document.getElementById("sidebar");
+                toggleSideBar(sidebar)
+                offsetTop = offsetTop - 100;
+            }
+        });
+
+
+        /*close sidebar when clicking on a link*/
+        document.querySelectorAll('nav-link').forEach(anchor => {
+            console.log("is working");
+            let isMobile = window.innerWidth <= 600;
+
+            if (isMobile) {
+                console.log("is mobile is working");
+                anchor.addEventListener('click', function (e) {
+                    const sidebar = document.getElementById("sidebar");
+                    toggleSideBar(sidebar)
+                });
+            }
+        });
+
+        /*toggles element if opacity and display style set to 1 and block or 0 and none*/
+        function toggleSideBar(element) {
+            console.log("toggle sidebar")
+            if (element.style.display === "block") {
+                element.style.opacity = "0";
+                /*wait 0.5 second then set display to none*/
+                setTimeout(function () {
+                    element.style.display = "none";
+                }, 500);
+            } else {
+                element.style.display = "block";
+                element.style.opacity = "0";
+                /*wait 0.1 second then set opacity to 1, transition will fade it*/
+                setTimeout(function () {
+                    element.style.opacity = "1";
+                }, 100);
+            }
         }
+
+        document.getElementById("hamburger-menu").onclick = function() {
+        const sidebar = document.getElementById("sidebar");
+        toggleSideBar(sidebar)
     }
+    });
 </script>
 </body>
 </html>

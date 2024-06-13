@@ -6,6 +6,7 @@
 
 {% for category in categories %}
 <section id="{{ category }}">
+    <div class="mobile-top-bar-offset"> <!--mobile specific offset to assist scroll--></div>
     <h2 class="section-title-h2">{{ category }}</h2>
     {% set post_counter = namespace(c = 0) %}  <!--zero post counter for new category-->
     {% for post in posts if post.category == category %} <!--loop through posts in category-->

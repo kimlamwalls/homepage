@@ -1,5 +1,5 @@
 ---
-title: Quivers - Jackelope - Music Video
+title: Quivers - Jackelope
 date: 2019
 category: Music Video
 roles: Director, camera operator, editor

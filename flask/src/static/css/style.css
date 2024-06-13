@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -55,14 +56,14 @@ nav a {
 }
 
 nav h1 {
-    padding: 2vw 0vw 2vw 2.5vw;
+    padding: 2vw 0 2vw 2.5vw;
     font-size: 1.8vw;
     color: #f1f1f1;
     text-align: left;
     font-weight: 350;
 }
 nav h2{
-    padding: 0.6vw 0vw 0.6vw 2.5vw;
+    padding: 0.6vw 0 0.6vw 2.5vw;
     font-size: 1.5vw;
     text-align: left;
     font-weight: 250;
@@ -99,7 +100,6 @@ footer {
     /*align the text to the left*/
     text-align: left;
     /*add padding to the top and bottom of the footer*/
-
 }
 
 footer h2 {
@@ -108,10 +108,7 @@ footer h2 {
     text-align: left;
     padding-bottom: 1rem;
     padding-left:0;
-
-
-
-}
+    }
 
 footer a {
     font-size: 1.5vw;
@@ -185,7 +182,7 @@ body {
 /* GRID SETUP STYLING */
 
 .grid-container {
-    diplay: block;
+    display: block;
     /*gap: 5%;*/
     width: 100%;
     margin: auto;
@@ -255,8 +252,8 @@ body {
     top: 0;
     left: 0;
     /*add darken filter to soften the image*/
-    filter: brightness(0.95);
-    filter: blur(0.2px); /* effect to blur the image */
+   /* filter: brightness(0.95);
+    filter: blur(0.2px); !* effect to blur the image *!*/
     transition: 0.6s;
 }
 
@@ -401,7 +398,7 @@ body {
     object-fit: contain; /* Ensures the image fits within the container */
     display: block;
     /*add darken filter to soften the image*/
-    filter: brightness(0.95);
+    filter: brightness(1);
 }
 
 
@@ -411,7 +408,7 @@ body {
     object-fit: contain; /* Ensures the image fits within the container */
     display: block;
     /*add darken filter to soften the image*/
-    filter: brightness(0.95);
+    filter: brightness(1);
 }
 
 /* Gallery Container */
@@ -464,7 +461,6 @@ body {
 
 .video-link {
         text-align: left;
-
     }
     .video-link img {
         max-width: 100%;
@@ -479,6 +475,12 @@ body {
         padding-top: 1em;
     }
 
+.mobile-top-bar-offset {
+    margin: 0;
+    display: none;
+}
+
+
 
 /*=============================Scaling for mobile===========================*/
     @media only screen and (max-width: 600px) {
@@ -487,10 +489,14 @@ body {
     {
         width: 90%;
         /*account for the top bar*/
-        margin: 7vh auto auto;
+        margin: 5vw auto auto;
 
     }
 
+.mobile-top-bar-offset {
+    padding-top:4vh;
+    display: block;
+}
 
 
     /*styed like a top header bar*/
@@ -526,7 +532,6 @@ body {
         left: 0;
         overflow-x: hidden;
         opacity: 0;
-
         transition: opacity 0.2s ease-in;
     }
 
@@ -542,7 +547,7 @@ body {
 
     .sidebar h1{
        font-weight: 400;
-        font-size: 7vw;
+        font-size: 10vw;
         color: #ffffff;
         display: block;
         transition: 0.3s;
@@ -563,7 +568,6 @@ body {
 
     .smaller-margin-top{
         margin-top: 4vw;
-
     }
 
     .section-title-h2 {
@@ -574,7 +578,8 @@ body {
     }
 
     .grid-item-content {
-        padding: 1.5vw 1.5vw 1vw;
+
+        padding: 4vw 0 2vw 4vw;
         font-size: 3vw;
         background:rgba(0, 0, 0, 0.8);
     }
@@ -586,6 +591,7 @@ body {
 
     .grid-item-content p {
         font-size: 4vw;
+
     }
 
     .grid-item img{
@@ -600,7 +606,7 @@ body {
     }
 
     .post-container {
-        width: 90%;
+        width: 100%;
         margin-top: 17vw;
     }
 
@@ -636,6 +642,7 @@ body {
         width: 100%;
         object-fit: contain;
         display: block;
+        filter: brightness(1);
     }
 
     .post-img-main {
@@ -643,6 +650,11 @@ body {
         object-fit: contain;
         display: block;
         filter: brightness(0.95);
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
     }
 
     .gallery {
@@ -673,6 +685,18 @@ body {
         display: none;
         transition: background 0.3s ease;
     }
+
+    footer ul li a{
+        font-size: 8vw !important;
+        padding-right: 0.3vw;
+    }
+
+    footer p{
+        font-size: 3vw;
+
+    }
+
+
 
 
 

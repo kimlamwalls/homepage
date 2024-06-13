@@ -1,5 +1,5 @@
 ---
-title: The Pits - Shouting in Caps - Rear LP cover
+title: The Pits - Shouting in Caps
 date: 2017
 category: Photography
 roles: Photographer
@@ -16,11 +16,11 @@ I took this photo for the rear cover of Shouting in Caps' album, The Pits. The p
 <div class="gallery">
     <div class="gallery-item">
         <img src="/static/media/shouting-in-caps-rear.jpg" alt="rear cover">
-        <div class="caption">front cover</div>
+        <div class="caption">Back cover</div>
     </div>
     <div class="gallery-item">
         <img src="/static/media/shouting-in-caps-cover.jpg" alt="front cover">
-        <div class="caption">rear cover</div>
+        <div class="caption">Front cover</div>
     </div>
 </div>
 ```
