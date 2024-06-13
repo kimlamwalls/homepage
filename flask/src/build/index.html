@@ -37,7 +37,7 @@
 
 <body>
     <!--Mobile specific menus-->
-<div class="mobile-top-bar">
+<div class="mobile-top-bar" id="mobile-top-bar">
        <div class="hamburger-menu" id="hamburger-menu">
             &#9776; <!-- Hamburger icon -->
         </div>
@@ -602,7 +602,7 @@
             }
         }
 
-        document.getElementById("hamburger-menu").onclick = function() {
+        document.getElementById("mobile-top-bar").onclick = function() {
         const sidebar = document.getElementById("sidebar");
         toggleSideBar(sidebar)
     }
