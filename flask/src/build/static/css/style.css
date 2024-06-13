@@ -212,7 +212,7 @@ body {
     width: 35%;/*Main sizing parameter*/
     aspect-ratio: 1 / 1;    /*maintain 1:1 aspect ratio*/
     overflow: hidden;
-    filter: brightness(0.9); /* Hover effect to darken  the box */
+    filter: brightness(1); /* Hover effect to darken  the box */
     transition: filter 0.5s;
     /*round the edges*/
     border-radius: 0.1vw;
@@ -220,7 +220,7 @@ body {
 
 /*Hover effect*/
 .grid-item:hover {
-    filter: brightness(1); /* Hover effect to brighten the box */
+    filter: brightness(1.1); /* Hover effect to brighten the box */
     transition: filter 0.15s;
     /*    filter: blur(0px); !* Hover effect to blur the box *!
         transition: filter 0.05s;*/
@@ -408,7 +408,9 @@ body {
     object-fit: contain; /* Ensures the image fits within the container */
     display: block;
     /*add darken filter to soften the image*/
+    /*
     filter: brightness(1);
+    */
 }
 
 /* Gallery Container */
@@ -569,7 +571,9 @@ body {
  /*box sizing and styling*/
     .grid-item{
     width: 100%;/*Main sizing parameter*/
-    filter: brightness(1); /* Hover effect to brighten the box */
+    /*
+    filter: brightness(1.1); !* Hover effect to brighten the box *!
+    */
     margin: auto auto 5vw;
     }
 
@@ -656,14 +660,18 @@ body {
         width: 100%;
         object-fit: contain;
         display: block;
+        /*
         filter: brightness(1);
+        */
     }
 
     .post-img-main {
         width: 100%;
         object-fit: contain;
         display: block;
+        /*
         filter: brightness(0.95);
+        */
     }
 
     iframe {
