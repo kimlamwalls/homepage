@@ -38,7 +38,16 @@ def get_posts():
 
 def get_categories(posts):
     categories = {post['category'] for post in posts if post['category']}
-    return sorted(categories)  # Return a sorted list of categories
+    category_biases = {
+        'Design': 1,
+    }
+    # remove biased categores from categories list and place them in their own list
+    biased_categories = [category for category in categories if category in category_biases]
+    categories = [category for category in categories if category not in category_biases]
+    sorted_categories = sorted(categories)
+    sorted_biased_categories = sorted(biased_categories, key=lambda x: category_biases[x])
+    # add sorted biased categories to the end of sorted categories
+    return sorted_categories + sorted_biased_categories
 
 @app.route('/')
 def index():
