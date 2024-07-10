@@ -2,7 +2,7 @@
 title: All the Weathers - For the Worms
 date: 2016
 category: Audio Engineering
-roles: Producer, Engineer, Mixer, Photographer
+roles: Engineer, Mixer, Photographer
 description: Album by All the Weathers
 card_image: for-the-worms.jpg
 card_image_alt:  Album cover for For the Worms

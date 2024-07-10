@@ -2,7 +2,7 @@
 title: Treehouse - Centre of their World 
 date: 2017
 category: Audio Engineering
-roles: Producer, Engineer, Mixer
+roles: Engineer, Mixer
 description: Album by Treehouse
 card_image: centre-of-their-world.jpg
 card_image_alt:  Album cover for Centre of their World
