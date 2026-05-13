@@ -473,6 +473,10 @@ body {
     margin-top: 1.5rem;
 }
 
+.multi-section-spacer{
+    margin-top: 4rem;
+}
+
 
 .video-link {
         text-align: left;
@@ -496,6 +500,20 @@ body {
 }
 
 
+/* MAIN PAGE ABOUT SECTION TEXT */
+
+.main-page-container {
+    margin-left: 8.4vw;
+    width: 70%;
+}
+
+.main-page-text {
+    font-size: 1.2vw;
+    font-weight: 350;
+    line-height: 1.6;
+    text-align: left;
+}
+
 
 /*=============================Scaling for mobile===========================*/
     @media only screen and (max-width: 600px) {
@@ -506,6 +524,19 @@ body {
         /*account for the top bar*/
         margin: 5vw auto auto;
 
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .main-page-container {
+            margin-left: 0;
+            width: 100%;
+        }
+    
+        .main-page-text {
+            font-size: 4vw;
+            line-height: 1.5;
+        }
     }
 
   /* Hamburger Menu Styling */

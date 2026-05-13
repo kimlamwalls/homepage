@@ -2,15 +2,18 @@
 title: Galapagos Island - Archipelago (Live)
 date: 2024
 category: Music
-roles: Composer, performer
+roles: Performer
 description: Live album of ambient music. Synthesizers, drums, piano.
 card_image: archipelago.jpg
 card_image_alt: Album cover for Archipelago (Live)
 ---
 
 
-
 Live recorded performance as part of an ambient 2 piece. Synthesizers, drums, piano.
+
+Myself - Synthesizer, Percussion
+
+Callum Cusick - Synthesizer, Piano
 
 
 
