@@ -15,7 +15,15 @@ Didn't get too far along. But I enjoyed making some music with a cheap acoustic 
 
 I was quite pleased with the way the field recordings and visuals came together. <br>
 
-The trees and fisherman is from itch.io <br>
+The birch tree and fisherman is from itch.io <br>
+
+Fisherman Sprite<br>
+
+https://danger-goose.itch.io/old-man-likes-to-fish-asset-pack<br>
+
+Birch Tree<br>
+
+https://gandalfhardcore.itch.io/free-pixel-art-sidescroller-asset-pack-32x32-overworld
 
 The rest of the art is done by me and my sister. <br>
 

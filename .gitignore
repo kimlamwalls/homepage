@@ -10,3 +10,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+flask/src/__pycache__

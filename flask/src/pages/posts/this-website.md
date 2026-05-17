@@ -46,7 +46,6 @@ output will be in the `build` directory.
 
 The website is hosted on Netlify and the source code is available on GitHub at the following link
 
-
 <a href="https://github.com/kimlamwalls/homepage">GitHub Link</a>
 
 © Kim Walls 2026

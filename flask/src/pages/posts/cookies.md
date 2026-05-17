@@ -1,7 +1,7 @@
 ---
 title: Fridge Full of Cookies
 date: 2025-present
-category: Cookies
+category: Cookies!
 roles: Making Cookies
 description: Cookies
 card_image: cookie-logo.jpg
