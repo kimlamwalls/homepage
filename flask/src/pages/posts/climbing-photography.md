@@ -8,13 +8,11 @@ card_image: dave-highball.jpg
 card_image_alt: climber on a highball boulder problem
 ---
 
-
 I picked up rock climbing in 2015, what a special thing. 
 On and off I have taken some photos of adventures along the way.
 Here are a few of them.
 
 <div class="gallery">
-
 <h2>East</h2>
     <div class="gallery-item">
         <img src="/static/media/climbing-photography/east-jo.jpg" alt="Climber on granite coastal cliffs">

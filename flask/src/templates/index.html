@@ -1,9 +1,19 @@
 {% extends "base.html" %}
 {% block title %}Kim Walls{% endblock %}
 
-
 {% block content %}
 
+<!-- THIS SECTION IS MANUALLY EDITED -->
+<section id="about">
+    <div class="mobile-top-bar-offset"></div>
+    <h2 class="section-title-h2">About</h2>
+
+    <div class="main-page-container">
+        <p class="main-page-text">
+            Hi, I'm Kim. Sometimes I like making things. <br>
+        </p>
+    </div>
+</section>
 {% for category in categories %}
 <section id="{{ category }}">
     <div class="mobile-top-bar-offset"> <!--mobile specific offset to assist scroll--></div>
@@ -28,7 +38,9 @@
             <a href="{{ url_for('post', post_slug=post.slug) }}" class="grid-item {{ class }}">
                 <div class="grid-item-content">
                     <h3>{{ post.title }}</h3>
+                    {% if post.roles %}
                     <p>{{ post.roles }}</p>
+                    {% endif %}
                 </div>
                 <!--if post has image file, render that-->
                 {% if post.card_image %}

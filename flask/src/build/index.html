@@ -53,6 +53,8 @@
     
     <h2 class="nav-link"><a href="/#Audio Engineering">Audio Engineering</a></h2>
     
+    <h2 class="nav-link"><a href="/#Cookies!">Cookies!</a></h2>
+    
     <h2 class="nav-link"><a href="/#Games">Games</a></h2>
     
     <h2 class="nav-link"><a href="/#Music">Music</a></h2>
@@ -81,6 +83,17 @@
     <main id="main">
         
 
+<!-- THIS SECTION IS MANUALLY EDITED -->
+<section id="about">
+    <div class="mobile-top-bar-offset"></div>
+    <h2 class="section-title-h2">About</h2>
+
+    <div class="main-page-container">
+        <p class="main-page-text">
+            Hi, I'm Kim. Sometimes I like making things. <br>
+        </p>
+    </div>
+</section>
 
 <section id="Audio Engineering">
     <div class="mobile-top-bar-offset"> <!--mobile specific offset to assist scroll--></div>
@@ -99,7 +112,9 @@
             <a href="/post/centre-of-their-world/" class="grid-item grid-L">
                 <div class="grid-item-content">
                     <h3>Treehouse - Centre of their World</h3>
+                    
                     <p>Engineer, Mixer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -123,11 +138,85 @@
             <a href="/post/for-the-worms/" class="grid-item grid-R">
                 <div class="grid-item-content">
                     <h3>All the Weathers - For the Worms</h3>
+                    
                     <p>Engineer, Mixer, Photographer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
                 <img src="/static/media/for-the-worms.jpg" alt="Album cover for For the Worms"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+         <!--loop through posts in category-->
+     <!-- else if post counter is greater than 2 and even-->
+        <div class="grid-row-container"> <!-- create new normal row-->
+            
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/screwy/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>Mt Trout - Screwy</h3>
+                    
+                    <p>Engineer, Mixer</p>
+                    
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/screwy.jpg" alt="Album cover for Centre of their World"
+                     class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+        
+    </div>
+</section>
+
+<section id="Cookies!">
+    <div class="mobile-top-bar-offset"> <!--mobile specific offset to assist scroll--></div>
+    <h2 class="section-title-h2">Cookies!</h2>
+      <!--zero post counter for new category-->
+     <!--loop through posts in category-->
+     <!--if first post in category-->
+    <div class="grid-row-container smaller-margin-top"> <!-- create new row with smaller top margin-->
+        
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/cookies/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>Fridge Full of Cookies</h3>
+                    
+                    <p>Making Cookies</p>
+                    
+                </div>
+                <!--if post has image file, render that-->
+                
+                <img src="/static/media/cookie-logo.jpg" alt="chocolate chip cookie"
                      class="grid-item-image">
                 
 
@@ -159,7 +248,9 @@
             <a href="/post/cake-jam/" class="grid-item grid-L">
                 <div class="grid-item-content">
                     <h3>Let Them Eat Cake? - Cake Book Game Jam</h3>
+                    
                     <p>Programmer, Game Designer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -180,15 +271,109 @@
             
             <!--if its last post and odd-->
             
+            <a href="/post/experiments/" class="grid-item grid-R">
+                <div class="grid-item-content">
+                    <h3>Interactive Experiments</h3>
+                    
+                </div>
+                <!--if post has image file, render that-->
+                
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/sploop.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+         <!--loop through posts in category-->
+     <!-- else if post counter is greater than 2 and even-->
+        <div class="grid-row-container"> <!-- create new normal row-->
+            
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            <a href="/post/fishing-with-blom/" class="grid-item grid-L">
+                <div class="grid-item-content">
+                    <h3>Fishing Game WIP</h3>
+                    
+                    <p>Music, Programmer, Field Recordings</p>
+                    
+                </div>
+                <!--if post has image file, render that-->
+                
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/fishing-game.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+         <!--loop through posts in category-->
+    
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
             <a href="/post/high-score/" class="grid-item grid-R">
                 <div class="grid-item-content">
                     <h3>High Score Workshop - Paperbark</h3>
+                    
                     <p>Composer, Sound Designer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
                 <img src="/static/media/paperbark.jpg" alt="High Score Workshop, Paperbark"
                      class="grid-item-image">
+                
+
+            </a>
+             <!--increment post counter-->
+            <!--print a debug output of the post counter and the grid l or grid r class used-->
+
+            
+        </div>
+        
+         <!--loop through posts in category-->
+     <!-- else if post counter is greater than 2 and even-->
+        <div class="grid-row-container"> <!-- create new normal row-->
+            
+            <!-- set class to grid-L if post counter is even, else set to grid-R-->
+            
+            
+            
+            <!--if its last post and odd-->
+            
+            
+            
+            <a href="/post/words-in-trees/" class="grid-item last-single-grid-item">
+                <div class="grid-item-content">
+                    <h3>Words in Trees WIP</h3>
+                    
+                    <p>Music, Programmer</p>
+                    
+                </div>
+                <!--if post has image file, render that-->
+                
+                <!--if post has video file, render that-->
+                <video width="240" height="240" autoplay muted loop playsinline>
+                    <source src="/static/media/wordsintrees.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.</video>
                 
 
             </a>
@@ -221,7 +406,9 @@
             <a href="/post/archipelago/" class="grid-item last-single-grid-item">
                 <div class="grid-item-content">
                     <h3>Galapagos Island - Archipelago (Live)</h3>
-                    <p>Composer, performer</p>
+                    
+                    <p>Performer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -257,7 +444,9 @@
             <a href="/post/dolphin-wine/" class="grid-item grid-L">
                 <div class="grid-item-content">
                     <h3>Dolphin - Wine</h3>
+                    
                     <p>Director, camera operator, editor</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -283,7 +472,9 @@
             <a href="/post/hammer-on-the-door/" class="grid-item grid-R">
                 <div class="grid-item-content">
                     <h3>Treehouse - Hammer on the Door</h3>
+                    
                     <p>Director, camera operator, editor</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -313,7 +504,9 @@
             <a href="/post/mount-trout-tarn/" class="grid-item grid-L">
                 <div class="grid-item-content">
                     <h3>Mount Trout - Tarn</h3>
+                    
                     <p>Director, camera operator, editor</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -339,7 +532,9 @@
             <a href="/post/quivers-jackelope/" class="grid-item grid-R">
                 <div class="grid-item-content">
                     <h3>Quivers - Jackelope</h3>
+                    
                     <p>Director, camera operator, editor</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -377,7 +572,9 @@
             <a href="/post/climbing-photography/" class="grid-item grid-L">
                 <div class="grid-item-content">
                     <h3>Climbing</h3>
+                    
                     <p>Photographer, Climberer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -401,7 +598,9 @@
             <a href="/post/portraits/" class="grid-item grid-R">
                 <div class="grid-item-content">
                     <h3>Portraits</h3>
+                    
                     <p>Photographer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -431,7 +630,9 @@
             <a href="/post/shouting-in-caps/" class="grid-item last-single-grid-item">
                 <div class="grid-item-content">
                     <h3>The Pits - Shouting in Caps</h3>
+                    
                     <p>Photographer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -467,7 +668,9 @@
             <a href="/post/georgia-lucy/" class="grid-item grid-L">
                 <div class="grid-item-content">
                     <h3>Georgia Lucy&#39;s Creative Process</h3>
+                    
                     <p>Videographer, Editor</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -493,7 +696,9 @@
             <a href="/post/im-not-home-right-now/" class="grid-item grid-R">
                 <div class="grid-item-content">
                     <h3>3rd June 2017 Daytime, I&#39;m not home right now.</h3>
+                    
                     <p>Videographer, Composer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 
@@ -533,7 +738,9 @@
             <a href="/post/this-website/" class="grid-item last-single-grid-item">
                 <div class="grid-item-content">
                     <h3>This Website</h3>
+                    
                     <p>Designer, developer</p>
+                    
                 </div>
                 <!--if post has image file, render that-->
                 

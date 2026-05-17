@@ -11,12 +11,10 @@ card_image_alt: Screenshot of this website
 
 Designed and developed this website using Flask, Python, Jinja and Flask-freezer.
 
-
-This is a portfolio project for me to showcase my work. 
-
 I designed and developed this website using the following :
 
 <ul>
+<li> Figma </li>
 <li> Flask </li>
 <li> Python </li>
 <li> Jinja </li>
@@ -48,7 +46,6 @@ output will be in the `build` directory.
 
 The website is hosted on Netlify and the source code is available on GitHub at the following link
 
-
 <a href="https://github.com/kimlamwalls/homepage">GitHub Link</a>
 
-© Kim Walls 2024
+© Kim Walls 2026
